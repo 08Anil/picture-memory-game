@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Picture Memory Game</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="css/game.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+  <section id="memory--app-left" class="hide">
+    <ul id="memory--cards">
+    </ul>
+  </section>
+  <section id="memory--app-right" class="hide">
+    <div class="wrapper">
+      <div class="counter">
+        Starting Game in
+        <span id="time">00:00</span><span> sec..</span>
+      </div>
+      <div id="findImage">
+      </div>
+      <button id="restart-game">Restart Game</button>
+    </div>
+  </section>
+  <section class="loader show" id="loader">
+    <div class="bounce inline-loader">
+      <div class="bounce-child sk-bounce1"></div>
+      <div class="bounce-child sk-bounce2"></div>
+      <div class="bounce-child sk-bounce3"></div>
+    </div>
+  </section>
+
+  <script src="js/game.js" type="text/javascript"></script>
+  <script src="js/card.js" type="text/javascript"></script>
+  <script src="js/interaction.js" type="text/javascript"></script>
+</body>
+
+</html>
